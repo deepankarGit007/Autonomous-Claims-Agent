@@ -10,7 +10,8 @@ namespace SynapxAgent
     {
         private readonly string _apiKey;
         private readonly HttpClient _httpClient;
-        private const string ModelUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent";
+        // Updated to use the specific model from your list
+        private const string ModelUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
 
         public ClaimsAgent(string apiKey)
         {

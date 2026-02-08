@@ -40,38 +40,38 @@ namespace SynapxAgent
 
     public class PolicyDetails
     {
-        public string PolicyNumber { get; set; }
-        public string PolicyHolderName { get; set; }
-        public string EffectiveDate { get; set; }
-        public string ExpirationDate { get; set; }
+        public string? PolicyNumber { get; set; }
+        public string? PolicyHolderName { get; set; }
+        public string? EffectiveDate { get; set; }
+        public string? ExpirationDate { get; set; }
     }
 
     public class IncidentDetails
     {
-        public string Date { get; set; }
-        public string Time { get; set; }
-        public string Location { get; set; }
-        public string Description { get; set; }
+        public string? Date { get; set; }
+        public string? Time { get; set; }
+        public string? Location { get; set; }
+        public string? Description { get; set; }
     }
 
     public class PartiesDetails
     {
-        public string ClaimantName { get; set; }
-        public string ThirdPartyName { get; set; } // Optional, can be null
-        public string ContactPhone { get; set; }
-        public string ContactEmail { get; set; }
+        public string? ClaimantName { get; set; }
+        public string? ThirdPartyName { get; set; } // Optional, can be null
+        public string? ContactPhone { get; set; }
+        public string? ContactEmail { get; set; }
     }
 
     public class AssetDetails
     {
-        public string AssetType { get; set; } // e.g., "Vehicle", "Property"
-        public string AssetId { get; set; }   // VIN or similar
+        public string? AssetType { get; set; } // e.g., "Vehicle", "Property"
+        public string? AssetId { get; set; }   // VIN or similar
         public decimal? EstimatedDamage { get; set; } // Nullable in case it's missing
     }
 
     public class MandatoryData
     {
-        public string ClaimType { get; set; } // e.g., "Injury", "Property Damage"
+        public string? ClaimType { get; set; } // e.g., "Injury", "Property Damage"
         public bool HasAttachments { get; set; }
         public bool HasInitialEstimate { get; set; }
     }
