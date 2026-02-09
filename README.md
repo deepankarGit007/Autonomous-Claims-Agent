@@ -53,6 +53,11 @@ dotnet restore
 Prepare your Input:
 Place your PDF files (e.g., ACORD-Automobile-Loss-Notice.pdf) into the src/InputDocs folder.
 
+## 🧪 Running Tests
+To verify the business logic (routing rules), run the automated test suite:
+```bash
+dotnet test
+
 Run the Application:
 
 Bash
